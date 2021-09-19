@@ -5,27 +5,6 @@ from astropy.table import Table,Column
 import pandas as pd
 import json
 import os
-# from pydrive.auth import GoogleAuth
-# from pydrive.drive import GoogleDrive
-#
-# gauth = GoogleAuth()
-# gauth.LocalWebserverAuth()
-#
-# drive = GoogleDrive(gauth)
-#
-# file_list = drive.ListFile({'q': "'0B7ZDkYLdRh3AWVJyNF9SLWhRODQ' in parents and trashed=false"}).GetList()
-# for file1 in file_list:
-#     print(('title: %s, id: %s' % (file1['title'], file1['id'])))
-#
-# drivefile=drive.CreateFile({'id':'18w3dbA3lga8So5sCUml7xUFyOPjfTEZ-vXSzobYprhY'})
-# drivefile.GetContentFile('../data/downloaded_table.csv',mimetype='text/csv')
-
-# Generates HTML files that look (a bit) like the resources and workshops pages
-# on the Cardiff Physics Engagement blog
-# The styles are in styles.css
-
-# File can be downloaded (in CSV format) from https://docs.google.com/spreadsheets/d/18w3dbA3lga8So5sCUml7xUFyOPjfTEZ-vXSzobYprhY/edit?usp=sharing
-# You *may* need to remove commas (as astropy.table may not like them...
 
 if os.getcwd().split('/')[-1]=='python':
     relDir='../'

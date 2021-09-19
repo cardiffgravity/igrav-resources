@@ -20,7 +20,6 @@ a{
     height:3em;
     top:0;
     padding-top:0.5em;
-    background-color:#d42a3f;
     color:white;
     z-index:100;
 }
@@ -51,6 +50,7 @@ a{
     right:.5em;
     /* padding-right: 1em; */
     background-color:white;
+    color:black;
     padding:0.25em;
 }
 .title-item#logo img{
@@ -59,7 +59,6 @@ a{
 #filter-holder{
     position:fixed;
     width:350px;
-    background-color:#f1b7be;
     /* background-color:#eee; */
     /* top:3em; */
     height:100%;
@@ -78,6 +77,12 @@ a{
 .filter-top{
     width:100%;
     height:4em;
+}
+#filter-button, #title-bar, h3.filter-name{
+    background-color: #1f9bcf;
+}
+#filter-holder{
+    background-color:#1a1a1a;
 }
 /* Filter panel */
 @media (min-width: 1200px){
@@ -99,7 +104,6 @@ a{
         height:2.5em;
         border-right:solid white 2px;
         /* border-radius: 0 .5em .5em 0; */
-        background-color:#d42a3f;
         /* padding-right:.5em; */
         /* cursor:pointer; */
         z-index:10;
@@ -140,7 +144,6 @@ a{
         height:2.5em;
         border-right:solid white 2px;
         /* border-radius: 0 .5em .5em 0; */
-        background-color:#d42a3f;
         /* padding-right:.5em; */
         cursor:pointer;
         z-index:10;
@@ -281,7 +284,6 @@ h3.filter-name{
     padding-bottom:0.5em;
     padding-left:2em;
     padding-top:0.5em;
-    background-color:#d42a3f;
     color:#ffffff;
     border-radius:0.5em 0.5em 0 0;
     position:relative;
@@ -541,7 +543,8 @@ div.block-item {
     margin-bottom:.5em;
 }
 .block-item.hidden{
-    display:none;
+    opacity:0.5;
+    /* display:none; */
 }
 .block-item.search-hidden{
     display:none;
@@ -590,14 +593,20 @@ div.block-item .block-title{
     height:2.5em;
     margin-bottom: 0.5em;
 }
-.filt-option.dom-online-tool, .block-item.dom-online-tool .block-title {
+.filt-option.dom-gravitational-waves, .block-item.dom-gravitational-waves .block-title {
     background-color: #4f4c9a;
 }
-.filt-option.dom-education, .block-item.dom-education .block-title {
+.filt-option.dom-physics, .block-item.dom-physics .block-title {
     background-color: #57b7aa;
 }
-.filt-option.dom-data, .block-item.dom-data .block-title {
+.filt-option.dom-astro, .block-item.dom-astro .block-title {
     background-color: #f6881f;
+}
+.filt-option.dom-coding, .block-item.dom-coding .block-title {
+    background-color: #969696;
+}
+.filt-option.dom-mma, .block-item.dom-mma .block-title {
+    background-color: #009600;
 }
 /* #filter-type .filt-option{
     width:100%;
@@ -834,7 +843,7 @@ div.block-item .block-title{
     margin-right:.5em;
     margin-top:.1em;
 }
-.icon.icon-dom-online-tool{
+.icon.icon-dom-gravitational-waves{
     background:url('../icon/dom-online.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -842,7 +851,7 @@ div.block-item .block-title{
     border: #4f4c9a solid 1px;
     border-radius:10px;
 }
-.icon.icon-dom-education{
+.icon.icon-dom-physics{
     background:url('../icon/dom-education.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -850,7 +859,7 @@ div.block-item .block-title{
     border: #57b7aa solid 1px;
     border-radius:10px;
 }
-.icon.icon-dom-data{
+.icon.icon-dom-astro{
     background:url('../icon/dom-data.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -858,18 +867,18 @@ div.block-item .block-title{
     border: #f6881f solid 1px;
     border-radius:10px;
 }
-.icon.icon-dom-gravitational-waves{
-    background:url('../icon/dom-gw.svg');
+.icon.icon-dom-coding{
+    background:url('../icon/dom-coding.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.icon.icon-dom-mma{
+    background:url('../icon/dom-gravitational-waves.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .icon.icon-author-cardiff{
     background:url('../img/cardiffuni_white.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.icon.icon-dom-coding{
-    background:url('../icon/dom-coding.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

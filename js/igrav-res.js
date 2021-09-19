@@ -4,9 +4,11 @@ var filters={
         title:'Resource Domain',
         type:'normal',
         select:{
-            'online-tool':{'tag':'dom-online-tool',name:"Online Tool",icon:'dom-online.svg'},
-            'education':{'tag':'dom-education',name:"Education",icon:'dom-education.svg'},
-            'data':{'tag':'dom-data',name:"Data",icon:'dom-data.svg'}
+            'gw':{'tag':'dom-gravitational-waves',name:"Gravitational Waves",icon:'dom-online.svg'},
+            'physics':{'tag':'dom-physics',name:"Physics",icon:'dom-education.svg'},
+            'astronomy':{'tag':'dom-astro',name:"Astronomy",icon:'dom-data.svg'},
+            'coding':{'tag':'dom-coding',name:"Coding",icon:'dom-data.svg'},
+            'mma':{'tag':'dom-mma',name:"Multimessenger Astronomy",icon:'dom-data.svg'}
         }
     },'types':{
         sort:true,
@@ -65,14 +67,14 @@ var filters={
             'ageundergrad':{'tag':'age-undergrad',name:"Undergrad"},
             'ageresearcher':{'tag':'age-researcher',name:"Researcher"}
         },
-    },'author':{
-        tag:'author',
-        title:'Author',
-        type:'normal',
-        select:{
-            'lvk':{'tag':'author-lvk',name:"LIGO-Virgo-KAGRA"},
-            'external':{'tag':'author-external',name:"External provider"}
-        }
+    // },'author':{
+    //     tag:'author',
+    //     title:'Author',
+    //     type:'normal',
+    //     select:{
+    //         'lvk':{'tag':'author-lvk',name:"LIGO-Virgo-KAGRA"},
+    //         'external':{'tag':'author-external',name:"External provider"}
+    //     }
     }
 }
 var presets={
@@ -264,20 +266,20 @@ function populateData(){
                 // $('#'+_i+' .block-title').append('<div class="icon icon-type-'+tp+'"></div>');
             }
         }
-        if (_dx['LVK?']){
-            console.log(_dx['Resource Name'],_dx['LVK?'].toLowerCase);
-            if (_dx['LVK?'].toLowerCase()=='lvk'){
-                $('#'+_i).addClass('author-lvk');
-                $('#'+_i+' .block-title').append('<div class="icon icon-author-lvk"></div>');
-            }else if (_dx['LVK?'].toLowerCase()=='collaboration'){
-                $('#'+_i).addClass('author-collaboration');
-                $('#'+_i+' .block-title').append('<div class="icon icon-author-lvk"></div>');
-            }else{
-                $('#'+_i).addClass('author-external');
-            }
-        }else{
-            $('#'+_i).addClass('author-external');
-        }
+        // if (_dx['LVK?']){
+        //     console.log(_dx['Resource Name'],_dx['LVK?'].toLowerCase);
+        //     if (_dx['LVK?'].toLowerCase()=='lvk'){
+        //         $('#'+_i).addClass('author-lvk');
+        //         $('#'+_i+' .block-title').append('<div class="icon icon-author-lvk"></div>');
+        //     }else if (_dx['LVK?'].toLowerCase()=='collaboration'){
+        //         $('#'+_i).addClass('author-collaboration');
+        //         $('#'+_i+' .block-title').append('<div class="icon icon-author-lvk"></div>');
+        //     }else{
+        //         $('#'+_i).addClass('author-external');
+        //     }
+        // }else{
+        //     $('#'+_i).addClass('author-external');
+        // }
     }
 }
 
@@ -464,7 +466,7 @@ function updateFilters(){
             }
             filtTotal*=filtSub[filt]
         }
-        // console.log($(this).find('h3 > a').html(),filtSub,filtTotal)
+        console.log($(this).find('h3 > a').html(),filtSub,filtTotal)
         if (filtTotal==0){
             $(this).addClass('hidden');
         }else{
