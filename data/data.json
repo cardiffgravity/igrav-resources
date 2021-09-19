@@ -2,14 +2,14 @@
   {
     "Resource Name": "General Relativity - ReleQuant learning environment",
     "Domain": "Physics",
-    "Type of Resource": "Interactive; Online; Reading; Video",
+    "Type of Resource": "Interactive, Online, Reading, Video",
     "URL": "https://www.viten.no/relativity",
     "Other language(s)": "https://www.viten.no/filarkiv/relativitetsteori/",
     "Image upload": "https://drive.google.com/open?id=1PVEANue3aVmcVfNz5PTkl0aC9WsQ8-OS",
     "Description": "The general theory of relativity describes gravity in a completely different way than classical physics does: In general relativity, gravity is not described as a force but rather as the interplay between mass, time, and space. When Einstein published his theory in 1915, he predicted several surprising phenomena which were later experimentally confirmed \u2013 among them the bending of light and warping of time by massive objects.\n\nThis learning resource was developed by the research and development team in the project ReleQuant, based at the University of Oslo, the Norwegian Centre for Science Education, and the Norwegian University of Science and Technology. Magdalena Kersting has been responsible for the development of the program. It has received support from the Research Council of Norway and the Olav Thon Foundation.",
     "Author/Originator": "ReleQuant",
     "Curriculum links": "- gravity\n- general relativity\n- astronomy\n- nature of science\n- history of science ",
-    "Age Range": "14-16; 16-18; >18",
+    "Age range": "14-16, 16-18, >18",
     "Duration": "4 hours",
     "Requirements": "Any device; Web access"
   },
