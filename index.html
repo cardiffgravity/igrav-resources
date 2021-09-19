@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" media="all" href="css/lvk-res.css" type="text/css"/>
+<link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script src="js/lvk-res.js" type="text/javascript"/></script>
+</head>
+<body>
+<div id="main" class="main">
+<div id="title-bar" class="main">
+<div id="title-cont">
+<div class="title-item left closed" id="filter-button"><img src="img/menu.svg"/ title="Filter"><div id="filter-label" class="title-item left">Filters</div></div>
+<div class="title-item right" id="logo"><img src="img/lv_logo.png"></div>
+<!-- <div class="title-item right" id="title">Gravitational Wave Resources</div> -->
+</div></div>
+<div id="filter-holder" class="closed"><div class="filter-top"></div></div>
+<div id="content">
+<div class="intro"><p>If you're after resources to explore gravitational waves, then this is the place!</p><p>Below you will find links to some suggested resources put together by researchers in the <a href="http://ligo.org">LIGO</a>, <a href="https://www.virgo-gw.eu/">Virgo</a> and <a href="https://gwcenter.icrr.u-tokyo.ac.jp/en/">KAGRA</a> collaborations. Some have been created by these collaborations, but many are from external organisations - though they all come recommended!</p><p>Hopefully there'll be something there of interest for you, your children, or your students. If there's something you'd like added, then LVK members can <a href="https://git.ligo.org/epo/resource-list/-/issues/new?issuable_template=new_resources">submit an issue</a>. Non-LVK members can make suggestions using <a href="mailto:questions@ligo.org">LIGO Questions</a>.</p><p>You can filter your selections using the menus on the left, or use the presets below:</p></div>
+<div class="intro" id="presets"><span class="heading">Presets:</span></div>
+<div class="intro" id="search">
+    <span class="heading">Search:</span>
+    <input type="text" id="search-input" onkeyup="searchList()" placeholder="Search resources...">
+    <div class="search-opt" id="search-clear">Clear</div>
+    <div class="search-opt less" id="search-opt-toggle"><div class="arrow"></div></div>
+</div>
+<div class="intro hidden" id="search-options">
+    <span class="heading">Search fields:</span>
+    <div class="search-opt" id="search-desc">
+        <input id="search-title-input" type="checkbox" checked="true" name="search-title-input"/>
+        <label id="search-title-label" for="search-title-input">Title</label>
+    </div>
+    <div class="search-opt" id="search-desc">
+        <input id="search-desc-input" type="checkbox" name="search-desc-input"/>
+        <label id="search-desc-label" for="search-desc-input">Description</label>
+    </div>
+    <div class="search-opt" id="search-author">
+        <input id="search-author-input" type="checkbox" name="search-author-input"/>
+        <label id="search-author-label" for="search-desc-input">Author</label>
+    </div>
+</div>
+</div>
+<div class="about filter closed" id="about"><h3 class="filter-name">About</h3><p>Created by Chris North (Cardiff University) for the LIGO-Virgo-KAGRA Collaboration. Hosted on <a href="http://gitlab.ligo.org/epo/resource-list/">GitLab</a>.</p><p>Suggest additions/changes by submitting an <a href="https://git.ligo.org/epo/resource-list/-/issues/new?issuable_template=new_resources">issue</a> (LVK-only) or contacting <a href="mailto:questions@ligo.org">LIGO questions</a>.</p><p>Icons adapted from: <a href="https://material.io/resources/icons/">Material.io</a>; <a href="https://commons.wikimedia.org/wiki/User:Evolution_and_evolvability">Thomas Shafee</a>; <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>.</p></div>
+</div>
+<script type="text/javascript"/>initPage(fileIn='data/data.jsonp');</script>
+</body>
+</html>
