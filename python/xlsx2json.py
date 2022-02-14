@@ -16,7 +16,7 @@ else:
     relDir='./'
 fileIn=os.path.join(relDir,"data/data.xlsx")
 
-jsonFileIn=os.path.join(relDir,'data/data.json')
+jsonFileIn=os.path.join(relDir,'public/config/data.json')
 
 jsonIn=json.load(open(jsonFileIn,'r'))
 jsonOut=[]
@@ -74,9 +74,9 @@ for row in tabIn:
         print('Adding new entry {}'.format(row['Resource Name']))
         jsonOut.append(entry)
 
-json.dump(jsonOut,open(os.path.join(relDir,'data/data.json'),'w'),indent=2)
-fIn=open(os.path.join(relDir,'data/data.json'),'r')
-fOut=open(os.path.join(relDir,'data/data.jsonp'),'w')
+json.dump(jsonOut,open(os.path.join(relDir,'public/config/data.json'),'w'),indent=2)
+fIn=open(os.path.join(relDir,'public/config/data.json'),'r')
+fOut=open(os.path.join(relDir,'public/config/data.jsonp'),'w')
 lines=fIn.readlines()
 lines[0]='data('+lines[0]
 lines[-1]=lines[-1]+');'
