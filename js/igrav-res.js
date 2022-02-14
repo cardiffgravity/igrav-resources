@@ -4,11 +4,20 @@ var filters={
         title:'Resource Domain',
         type:'normal',
         select:{
-            'gw':{'tag':'dom-gravitational-waves',name:"Gravitational Waves",icon:'dom-online.svg'},
-            'physics':{'tag':'dom-physics',name:"Physics",icon:'dom-education.svg'},
-            'astronomy':{'tag':'dom-astro',name:"Astronomy",icon:'dom-data.svg'},
-            'coding':{'tag':'dom-coding',name:"Coding",icon:'dom-data.svg'},
-            'mma':{'tag':'dom-mma',name:"Multimessenger Astronomy",icon:'dom-data.svg'}
+            'online-tool':{'tag':'dom-online-tool',name:"Online Tool",icon:'dom-online.svg'},
+            'education':{'tag':'dom-education',name:"Education",icon:'dom-education.svg'},
+            'data':{'tag':'dom-data',name:"Data",icon:'dom-data.svg'}
+      }
+    },'subject':{
+        tag:'subj',
+        title:'Resource Domain',
+        type:'normal',
+        select:{
+            'gw':{'tag':'subj-gravitational-waves',name:"Gravitational Waves",icon:'subj-online.svg'},
+            'physics':{'tag':'subj-physics',name:"Physics",icon:'subj-education.svg'},
+            'astronomy':{'tag':'subj-astro',name:"Astronomy",icon:'subj-data.svg'},
+            'coding':{'tag':'subj-coding',name:"Coding",icon:'subj-data.svg'},
+            'mma':{'tag':'subj-mma',name:"Multimessenger Astronomy",icon:'subj-data.svg'}
         }
     },'types':{
         sort:true,
@@ -81,7 +90,7 @@ var presets={
     'education':{
         button:true,
         title:'Education',
-        selected:{dom:['dom-education']},
+        selected:{dom:['subj-education']},
         unselected:{type:[],age:[],req:[],author:[]}
     },
     'presentation':{
@@ -255,7 +264,18 @@ function populateData(){
                 $('#'+_i+' .block-title').append('<div class="icon icon-dom-'+dm+'"></div>');
             }
         }
-        if (_dx['Type of Resource']){
+        if (_dx['Subject']){
+            _dx.subjs={};
+            subjs=_dx['Subject'].split(';');
+            for (s in subjs){
+                sb=subjs[s].trim().toLowerCase().replace(' ','-');
+                _dx.subjs[sb]=subjs[s];
+                $('#'+_i).addClass('subj-'+sb);
+                // $('#'+_i+' .block-title').append('<div class="icon icon-subj-'+sb+'"></div>');
+              }
+                $('#'+_i+' .res-subj').append('<div class="res-subj-item subj-'+sb+'"><div class="icon icon-subj-'+sb+'"></div><span class="res-subj-label">'+subjs[s].trim()+'</div></div>');
+                if (_dx['Type of Resource']){
+        }
             _dx.types={};
             types=_dx['Type of Resource'].split(';');
             for (t in types){
@@ -404,7 +424,7 @@ function makeSearch(){
         searchList();
     });
     searchList();
-    
+
 }
 function applyPreset(pid){
     if (!presets[pid]){console.log('invalid preset',pid);return;}
@@ -513,7 +533,7 @@ function searchList(){
             console.log('hide',title);
             $(this).addClass('search-hidden');
         }
-        
+
     });
 }
 function ajax(url,attrs){

@@ -593,20 +593,14 @@ div.block-item .block-title{
     height:2.5em;
     margin-bottom: 0.5em;
 }
-.filt-option.dom-gravitational-waves, .block-item.dom-gravitational-waves .block-title {
+.filt-option.dom-online-tool, .block-item.dom-online-tool .block-title {
     background-color: #4f4c9a;
 }
-.filt-option.dom-physics, .block-item.dom-physics .block-title {
+.filt-option.dom-education, .block-item.dom-education .block-title {
     background-color: #57b7aa;
 }
-.filt-option.dom-astro, .block-item.dom-astro .block-title {
+.filt-option.dom-data, .block-item.dom-data .block-title {
     background-color: #f6881f;
-}
-.filt-option.dom-coding, .block-item.dom-coding .block-title {
-    background-color: #969696;
-}
-.filt-option.dom-mma, .block-item.dom-mma .block-title {
-    background-color: #009600;
 }
 /* #filter-type .filt-option{
     width:100%;
@@ -614,13 +608,13 @@ div.block-item .block-title{
 #filter-type .filt-option{
     width:100%;
 } */
-.res-type-item, .res-req-item{
+.res-type-item, .res-req-item, .res-subj-item{
     display:inline-block;
     vertical-align: middle;
     margin-left:.5em;
     margin-right:.5em;
 }
-.res-type-item .icon,.res-req-item .icon{
+.res-type-item .icon,.res-req-item .icon, .res-subj-item .icon{
     display:none;
     vertical-align: middle;
     width:2em;
@@ -630,7 +624,7 @@ div.block-item .block-title{
 /* .res-req-item.req-any-device{
     display:none;
 } */
-.res-type-item .res-type-label, .res-req-item .res-req-label{
+.res-type-item .res-type-label, .res-req-item .res-req-label, .res-subj-item .res-subj-label{
     vertical-align: middle;
 }
 .icon.icon-type-online{
@@ -843,7 +837,7 @@ div.block-item .block-title{
     margin-right:.5em;
     margin-top:.1em;
 }
-.icon.icon-dom-gravitational-waves{
+.icon.icon-dom-online-tool{
     background:url('../icon/dom-online.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -851,7 +845,7 @@ div.block-item .block-title{
     border: #4f4c9a solid 1px;
     border-radius:10px;
 }
-.icon.icon-dom-physics{
+.icon.icon-dom-education{
     background:url('../icon/dom-education.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -859,22 +853,42 @@ div.block-item .block-title{
     border: #57b7aa solid 1px;
     border-radius:10px;
 }
-.icon.icon-dom-astro{
+.icon.icon-dom-data{
     background:url('../icon/dom-data.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: #f6881f;
     border: #f6881f solid 1px;
     border-radius:10px;
-}
-.icon.icon-dom-coding{
-    background:url('../icon/dom-coding.svg');
+  }
+.icon.icon-subj-gravitational-waves{
+    background:url('../icon/subj-gw.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.icon.icon-dom-mma{
-    background:url('../icon/dom-gravitational-waves.svg');
+.icon.icon-subj-astronomy{
+    background:url('../icon/subj-astro.svg');
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.icon.icon-subj-physics{
+    background:url('../icon/subj-phys.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.icon.icon-subj-mma{
+    background:url('../icon/subj-mma.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.icon.icon-subj-coding{
+    background:url('../icon/subj-coding.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.icon.icon-subj-mma{
+    display:inline-block;
+    background:url('../icon/subj-mma.svg');
     background-size: 100% 100%;
 }
 .icon.icon-author-cardiff{
