@@ -543,8 +543,8 @@ div.block-item {
     margin-bottom:.5em;
 }
 .block-item.hidden{
-    opacity:0.5;
-    /* display:none; */
+    /* opacity:0.5; */
+    display:none;
 }
 .block-item.search-hidden{
     display:none;
