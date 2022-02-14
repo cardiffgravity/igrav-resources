@@ -127,7 +127,7 @@ var dirs={
     img:'../img'
 }
 var hid='content';
-function initPage(fileIn='../data/data.jsonp'){
+function initPage(fileIn='../config/data.jsonp'){
     // console.log(fileIn,pop);
     $('#filter-button').click(function(){
         // console.log('filter-button clicked');
