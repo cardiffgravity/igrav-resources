@@ -15,7 +15,7 @@ var filters={
         select:{
             'gw':{'tag':'subj-gravitational-waves',name:"Gravitational Waves",icon:'subj-online.svg'},
             'physics':{'tag':'subj-physics',name:"Physics",icon:'subj-education.svg'},
-            'astronomy':{'tag':'subj-astro',name:"Astronomy",icon:'subj-data.svg'},
+            'astronomy':{'tag':'subj-astronomy',name:"Astronomy",icon:'subj-data.svg'},
             'coding':{'tag':'subj-coding',name:"Coding",icon:'subj-data.svg'},
             'mma':{'tag':'subj-mma',name:"Multimessenger Astronomy",icon:'subj-data.svg'}
         }
