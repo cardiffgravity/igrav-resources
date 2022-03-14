@@ -10,7 +10,7 @@ var filters={
       }
     },'subject':{
         tag:'subj',
-        title:'Resource Domain',
+        title:'Subject Area',
         type:'normal',
         select:{
             'gw':{'tag':'subj-gravitational-waves',name:"Gravitational Waves",icon:'subj-online.svg'},
